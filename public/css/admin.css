@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.app-container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background: #1e293b;
+    color: #fff;
+    min-height: 100vh;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.sidebar nav a:hover {
+    background: #334155;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    background: #f1f5f9;
+    width: 560px;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+}
+
+.menu-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+.search-box input {
+    padding: 6px;
+}
+
+.topbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.notification-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    background: #fff;
+    color: #000;
+    width: 200px;
+    padding: 10px;
+}
+
+.notification:hover .notification-dropdown {
+    display: block;
+}
+
+/* CONTENT */
+.content {
+    padding: 15px;
+}
+
+.cards, .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.card, .stat-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Ikifunguliwa */
+.sidebar.active {
+  left: 0;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -240px;
+        top: 0;
+    }
+
+    .sidebar.active {
+        left: 0;
+        width: 100%;
+    }
+}

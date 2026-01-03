@@ -1,0 +1,43 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+/* FOOTER */
+.foter {
+
+        display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #1e293b;
+    color: #f1f5f9;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

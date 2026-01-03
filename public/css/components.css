@@ -1,0 +1,77 @@
+/* BUTTONS */
+.btn {
+    padding: 10px 14px;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #fff;
+}
+
+.btn-danger {
+    background: #dc2626;
+}
+
+/* CARDS */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* TABLES */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+
+/* MODAL OVERLAY */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    width: 95%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #cbd5f5;
+}
+
+.close-btn {
+    background: none;
+    font-size: 22px;
+}
+
