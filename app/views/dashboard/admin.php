@@ -2,7 +2,7 @@
 
 <div class="app-container">
 
-    <?php require_once __DIR__ . '/../layouts/sidebar.php'; ?>
+    <?php require_once __DIR__ . '/../layouts//admin/sidebar.php'; ?>
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
@@ -19,6 +19,7 @@
                 <button class="card">📦 Ongeza Bidhaa</button>
                 <button class="card">💸 Ongeza Matumizi</button>
                 <button class="card">🛒 Manunuzi</button>
+                <button class="card" id="openAddMiradi"><i class="fa-solid fa-briefcase"></i> Miradi</button>
                 <a href="/kokuthan/public/admin/users" class="card">
                     <i class="fa fa-users"></i>
                     <span>Watumiaji</span>
@@ -50,7 +51,8 @@
 
 
         <!-- ADD USER MODAL -->
-        <?php require_once __DIR__ . '/../layouts/addUserForm.php'; ?>
+        <?php require_once __DIR__ . '/../layouts/admin/addUserForm.php'; ?>
+        <?php require_once __DIR__ . '/../layouts/admin/addMiradiForm.php'; ?>
 
         <!-- FOOTER -->
         <?php require_once __DIR__ . '/../layouts/footer.php'; ?>
